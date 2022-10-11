@@ -6,8 +6,15 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.app.ActionBar;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
+
+import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -36,4 +43,5 @@ public class MainActivity extends AppCompatActivity {
                 .replace(R.id.container, new CalculatorFragment())
                 .commit();
     }
+
 }

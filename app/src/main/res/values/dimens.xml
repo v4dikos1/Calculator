@@ -5,4 +5,5 @@
     <dimen name="mg_end_calc">10dp</dimen>
     <dimen name="mg_bottom_calc">10dp</dimen>
     <dimen name="input_text_size">34sp</dimen>
+    <dimen name="nav_bar_height">90dp</dimen>
 </resources>

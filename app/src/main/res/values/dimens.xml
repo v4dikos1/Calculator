@@ -4,4 +4,5 @@
     <dimen name="mg_start_calc">10dp</dimen>
     <dimen name="mg_end_calc">10dp</dimen>
     <dimen name="mg_bottom_calc">10dp</dimen>
+    <dimen name="input_text_size">34sp</dimen>
 </resources>

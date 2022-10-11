@@ -24,4 +24,5 @@
     <string name="brackets">⁽⁾</string>
     <string name="percent">%</string>
     <string name="divide">÷</string>
+    <string name="backspace">backspace</string>
 </resources>

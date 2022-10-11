@@ -5,6 +5,50 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/mg_end_calc"
+        app:layout_constraintBottom_toTopOf="@id/clear_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/button_stroke"
+        app:strokeWidth="1dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:textColor="@color/black"
+                android:textSize="@dimen/input_text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="9931931" />
+
+            <ImageButton
+                android:id="@+id/delete_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:contentDescription="@string/backspace"
+                android:padding="@dimen/mg_end_calc"
+                android:src="@drawable/ic_baseline_backspace_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
     <Button
         android:id="@+id/zero_button"
         style="@style/CalculatorButtonStyle"
@@ -160,8 +204,8 @@
         android:id="@+id/bracket_button"
         style="@style/CalculatorButtonStyle"
         android:maxLines="1"
-        app:autoSizeMinTextSize="48sp"
         android:text="@string/brackets"
+        app:autoSizeMinTextSize="48sp"
         app:autoSizeTextType="uniform"
         app:layout_constraintBottom_toTopOf="@id/eight_button"
         app:layout_constraintEnd_toStartOf="@id/percent_button"

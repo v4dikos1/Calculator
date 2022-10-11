@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_size">42sp</dimen>
+    <dimen name="mg_start_calc">10dp</dimen>
+    <dimen name="mg_end_calc">10dp</dimen>
+    <dimen name="mg_bottom_calc">10dp</dimen>
+</resources>

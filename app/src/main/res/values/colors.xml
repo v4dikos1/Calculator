@@ -9,4 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="nav_header">#AA96DA</color>
     <color name="settings_color">#B83B5E</color>
+    <color name="button_background">#F9F7F7</color>
+    <color name="button_stroke">#DBE2EF</color>
+    <color name="button_ripple_color">#E4F9F5</color>
 </resources>

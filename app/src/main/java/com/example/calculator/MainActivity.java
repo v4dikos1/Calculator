@@ -31,6 +31,9 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
 
-
+        getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.container, new CalculatorFragment())
+                .commit();
     }
 }

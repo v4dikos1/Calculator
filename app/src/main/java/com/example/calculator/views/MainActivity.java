@@ -1,20 +1,15 @@
-package com.example.calculator;
+package com.example.calculator.views;
 
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 
-import android.app.ActionBar;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
-import android.os.Build;
 import android.os.Bundle;
-import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
+import android.widget.Button;
 
-import java.util.Objects;
+import com.example.calculator.R;
+import com.example.calculator.views.fragments.CalculatorFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -42,6 +37,9 @@ public class MainActivity extends AppCompatActivity {
                 .beginTransaction()
                 .replace(R.id.container, new CalculatorFragment())
                 .commit();
+
+        Button one_btn = findViewById(R.id.one_button);
+
     }
 
 }
